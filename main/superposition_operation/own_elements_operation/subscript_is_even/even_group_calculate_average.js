@@ -4,10 +4,9 @@ let even_group_calculate_average = function (collection) {
   if (res.length === 0) {return [0]}
   let subArr = [];
   res.forEach((item) => generateSubArr(subArr, item));
-  let average = subArr.map(function (item) {
-    return item.reduce((pre, cur) => pre + cur) / item.length;
-  });
-  return average.filter((item) => item);
+  return subArr.map((item) => 
+    item.reduce((pre, cur) => pre + cur) / item.length)
+    .filter((item) => item);
 };
 
 function generateSubArr(arr, item) {
