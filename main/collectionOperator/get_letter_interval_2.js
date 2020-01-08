@@ -1,13 +1,13 @@
 'use strict';
 
 function get_letter_interval_2(number_a, number_b) {
-  var res = [];
+  let res = [];
   if (number_a < number_b) {
-    for(var item = number_a; item <= number_b; item++) {
+    for(let item = number_a; item <= number_b; item++) {
       res.push(generateString(item));
     } 
   } else if (number_a > number_b) {
-    for(var item = number_a; item >= number_b; item--) {
+    for(let item = number_a; item >= number_b; item--) {
       res.push(generateString(item));
     }
   } else {
@@ -17,10 +17,10 @@ function get_letter_interval_2(number_a, number_b) {
 }
 
 function generateString(index) {
-  var excess = Math.floor((index - 1) / 26);
-  var basic = 96 + index;
-  var former = 96 + excess;
-  var latter = 96 + index - excess * 26;
+  let excess = Math.floor((index - 1) / 26);
+  let basic = 96 + index;
+  let former = 96 + excess;
+  let latter = 96 + index - excess * 26;
   return (excess ? String.fromCharCode(former) + String.fromCharCode(latter) :
       String.fromCharCode(basic));
 }
