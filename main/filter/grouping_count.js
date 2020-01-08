@@ -2,13 +2,8 @@
 
 function grouping_count(collection) {
   var res = {};
-  collection.filter(function (value) {
-    if (value in res) {
-      res[value]++;
-    } else {
-      res[value] = 1;
-    }
-  });
+  collection.filter(value => 
+    value in res ? res[value]++ : res[value] = 1);
   return res;
 }
 
