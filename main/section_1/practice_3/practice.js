@@ -1,6 +1,6 @@
 function collect_same_elements(collection_a, object_b) {
-  var collection_b = object_b.value;
-  var totalArr = collection_b.concat(collection_a);
+  let collection_b = object_b.value;
+  let totalArr = collection_b.concat(collection_a);
   return totalArr.filter((value, index, array) =>
     array.indexOf(value) !== index, collection_b.length);
 }
