@@ -1,8 +1,8 @@
 'use strict';
 
 function calculate_elements_sum(collection, element) {
-  var item = 0;
-  var res;
+  let item = 0;
+  let res;
   while(item < collection.length) {
     if (collection[item] === element) {
       res = item;
