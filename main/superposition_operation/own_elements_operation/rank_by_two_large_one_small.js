@@ -1,5 +1,5 @@
 'use strict';
-function rank_by_two_large_one_small(collection){
+function rank_by_two_large_one_small(collection) {
   var arr = collection.sort((pre, cur) => pre - cur);
   var res = [];
   for(var item = 0; item < arr.length;) {

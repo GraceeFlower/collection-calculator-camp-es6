@@ -1,5 +1,5 @@
 'use strict';
-function one_add_next_multiply_three(collection){
+function one_add_next_multiply_three(collection) {
   var res = [];
   for(var item = 0; item < collection.length; item++) {
     if(item + 1 !== collection.length) {

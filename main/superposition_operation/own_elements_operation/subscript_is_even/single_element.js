@@ -1,5 +1,5 @@
 'use strict';
-var single_element = function(collection){
+var single_element = function (collection) {
   var res = collection.filter((value, index) => index % 2 !== 0);
   var repeat = res.filter(function (value, index, array) {
     return array.indexOf(value) !== index;
