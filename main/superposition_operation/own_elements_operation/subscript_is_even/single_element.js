@@ -1,9 +1,8 @@
 'use strict';
-var single_element = function (collection) {
-  var res = collection.filter((value, index) => index % 2 !== 0);
-  var repeat = res.filter(function (value, index, array) {
-    return array.indexOf(value) !== index;
-  });
+let single_element = function (collection) {
+  let res = collection.filter((value, index) => index % 2 !== 0);
+  let repeat = res.filter((value, index, array) => 
+    array.indexOf(value) !== index);
   if(repeat.length === 0) {
     return [];
   }
