@@ -1,8 +1,8 @@
 'use strict';
 
 function find_last_even(collection) {
-  var item = 0;
-  var res = null;
+  let item = 0;
+  let res = null;
   while(item < collection.length) {
     if (collection[item] % 2) {
       item++;
