@@ -1,5 +1,5 @@
 'use strict';
-var map_to_three_multiples = function(collections){
+let map_to_three_multiples = function(collections){
   return collections.map((item) => item * 3);
 };
 

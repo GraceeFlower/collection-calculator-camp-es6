@@ -1,5 +1,5 @@
 'use strict';
-var number_map_to_word_over_26 = function(collection){
+let number_map_to_word_over_26 = function(collection){
   return collection.map((item) => generateString(item));
 };
 
