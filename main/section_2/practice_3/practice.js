@@ -1,13 +1,13 @@
 function count_same_elements(collection) {
-  var results = [];
+  let results = [];
   collection.forEach(function (value) {
-    var num = value.match(/\d/g) ? parseInt(value.match(/\d/g).join("")) : 1;
-    var key = value.match(/\d/) ? value.slice(0, 1) : value;
-    var item = checkItem(results, key);
+    let num = value.match(/\d/g) ? parseInt(value.match(/\d/g).join("")) : 1;
+    let key = value.match(/\d/) ? value.slice(0, 1) : value;
+    let item = checkItem(results, key);
     if (item !== "") {
       results[item].summary += num;
     } else {
-      var result = {};
+      let result = {};
       result.name = key;
       result.summary = num;
       results.push(result);
@@ -17,7 +17,7 @@ function count_same_elements(collection) {
 }
 
 function checkItem(arr, element) {
-  for(var item = 0; item < arr.length; item++) {
+  for(let item = 0; item < arr.length; item++) {
     if(arr[item].name === element) {
       return item;
     }
