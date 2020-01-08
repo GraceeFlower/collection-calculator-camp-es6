@@ -1,8 +1,8 @@
 'use strict';
 
 function spilt_to_zero(number, interval) {
-  var res = [];
-  for(var item = number; item > 0;) {
+  let res = [];
+  for(let item = number; item > 0;) {
     var nextItem = (item * 10 - interval * 10) / 10;
     res.push(item);
     if (nextItem <= 0) {
