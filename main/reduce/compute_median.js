@@ -2,7 +2,7 @@
 
 function compute_median(collection) {
   collection.sort((pre, cur) => pre - cur);
-  var numLen = collection.length;
+  let numLen = collection.length;
   if (numLen % 2) {
     return collection[(numLen - 1) / 2];
   } else {
