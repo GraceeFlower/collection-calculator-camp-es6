@@ -4,10 +4,10 @@ var number_map_to_word_over_26 = function(collection){
 };
 
 function generateString(index) {
-  var excess = Math.floor((index - 1) / 26);
-  var basic = 96 + index;
-  var former = 96 + excess;
-  var latter = 96 + index - excess * 26;
+  let excess = Math.floor((index - 1) / 26);
+  let basic = 96 + index;
+  let former = 96 + excess;
+  let latter = 96 + index - excess * 26;
   if (!excess) {
     return String.fromCharCode(basic);
   } else {
