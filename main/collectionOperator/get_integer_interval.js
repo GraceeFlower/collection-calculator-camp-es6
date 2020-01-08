@@ -1,13 +1,13 @@
 'use strict';
 
 function get_integer_interval(number_a, number_b) {
-  var res = [];
+  let res = [];
   if (number_a < number_b) {
-    for(var item = number_a; item <= number_b; item++) {
+    for(let item = number_a; item <= number_b; item++) {
       res.push(item);
     }
   } else if(number_a > number_b) {
-    for(var item = number_a; item >= number_b; item--) {
+    for(let item = number_a; item >= number_b; item--) {
       res.push(item);
     }
   } else {
