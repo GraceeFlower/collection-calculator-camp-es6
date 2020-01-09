@@ -10,6 +10,8 @@ function find_first_even(collection) {
     }
   }
   return null;
+
+  //TODO: collection.find?
 }
 
 module.exports = find_first_even;

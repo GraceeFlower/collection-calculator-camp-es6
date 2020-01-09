@@ -2,7 +2,7 @@ function collect_same_elements(collection_a, collection_b) {
   let totalArr = collection_b.concat(collection_a);
   totalArr = double_to_one(totalArr);
   return totalArr.filter((value, index, array) =>
-    array.indexOf(value) !== index, collection_b.length);
+    array.indexOf(value) !== index, collection_b.length); //TODO: collection.flat().includes?
 }
 
 function double_to_one(collection) {

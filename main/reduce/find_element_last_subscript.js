@@ -12,6 +12,8 @@ function calculate_elements_sum(collection, element) {
     }
   }
   return res;
+
+  //TODO: return ((collection.length-1) - collection.reverse().findIndex(elem => elem === element));
 }
-  
+
 module.exports = calculate_elements_sum;

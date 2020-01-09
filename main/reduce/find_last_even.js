@@ -12,6 +12,8 @@ function find_last_even(collection) {
     }
   }
   return res;
+
+  //TODO: collection.find?
 }
 
 module.exports = find_last_even;

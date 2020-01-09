@@ -10,6 +10,7 @@ function get_union(collection_a, collection_b) {
     }
   }
   return res;
+  //TODO: 用set试试？
 }
 
 module.exports = get_union;

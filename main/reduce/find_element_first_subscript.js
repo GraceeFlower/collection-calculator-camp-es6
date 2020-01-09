@@ -9,6 +9,8 @@ function calculate_elements_sum(collection, element) {
       item++;
     }
   }
+
+  //TODO: return collection.findIndex(elem => elem === element);
 }
 
 module.exports = calculate_elements_sum;
